@@ -1,20 +1,20 @@
-import React, { FormEvent, ChangeEvent, useState } from 'react';
-import { urlEncode } from '../utils'
-import axios from 'axios'
+import React, { FormEvent, ChangeEvent } from 'react';
+//import { urlEncode } from '../utils'
+//import axios from 'axios'
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 
 
 
-function checkFormValidity() {
+//function checkFormValidity() {
     // const valid = this.$refs.contact.checkValidity()
     // this.valid = valid
-}
+//}
 
-function submitContactForm() {
+//function submitContactForm() {
 
-    checkFormValidity()
+    //checkFormValidity()
 
     // let self = this
 
@@ -35,35 +35,35 @@ function submitContactForm() {
     // })
     // .catch((error) => console.log(error))
 
-}
+//}
 
 
 function ContactMe(props: any) {
 
 
-    const [form, setForm] = useState({
-                name: '',
-                email: '',
-                message: '',
-                'form-name': 'contact'
-            })
+    //const [form, setForm] = useState({
+                //name: '',
+                //email: '',
+                //message: '',
+                //'form-name': 'contact'
+            //})
 
-    const [validForm, setValidForm] = useState(false)
+    //const [validForm, setValidForm] = useState(false)
 
-    const [successfulSubmit, setSuccess] = useState(false)
+    //const [successfulSubmit, setSuccess] = useState(false)
 
     const submitContactForm = function(event: FormEvent) {
             event.preventDefault()
     }
 
     const handleChange = function(event: ChangeEvent) {
-        const target = event.target
-        const value: string = (target.nodeValue) ? target.nodeValue : ""
-        const name: string = target.nodeName
-        setForm({
-            ...form,
-           name: value
-        });
+        //const target = event.target
+        //const value: string = (target.nodeValue) ? target.nodeValue : ""
+        //const name: string = target.nodeName
+        //setForm({
+            //...form,
+           //name: value
+        //});
   }
 
 
